@@ -1,0 +1,169 @@
+/* ==========================================
+   Components - Badges & Tags
+   CRM Bank Sumut
+   ========================================== */
+
+/* Status Badges */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: var(--radius-full);
+}
+
+.status-open {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--color-warning);
+}
+
+.status-in_progress,
+.status-in-progress {
+  background: rgba(6, 182, 212, 0.1);
+  color: var(--color-info);
+}
+
+.status-resolved,
+.status-closed {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--color-success);
+}
+
+.status-escalated {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--color-error);
+}
+
+/* Priority Badges */
+.priority-low {
+  background: rgba(107, 114, 128, 0.1);
+  color: var(--color-text-secondary);
+}
+
+.priority-medium {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--color-warning);
+}
+
+.priority-high {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--color-error);
+}
+
+/* Segment Badges */
+.customer-segment {
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: var(--radius-full);
+}
+
+.segment-mass {
+  background: rgba(107, 114, 128, 0.1);
+  color: var(--color-text-secondary);
+}
+
+.segment-emerging {
+  background: rgba(6, 182, 212, 0.1);
+  color: var(--color-info);
+}
+
+.segment-priority {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--color-success);
+}
+
+.segment-private {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--color-warning);
+}
+
+/* Consent Badges */
+.consent-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+}
+
+.consent-badge.granted {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--color-success);
+}
+
+.consent-badge.withdrawn {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--color-error);
+}
+
+/* Alert Badges */
+.alert {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+}
+
+.alert-warning {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--color-warning);
+}
+
+.alert-error {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--color-error);
+}
+
+.alert-success {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--color-success);
+}
+
+.alert-info {
+  background: rgba(6, 182, 212, 0.1);
+  color: var(--color-info);
+}
+
+/* SLA Badge */
+.sla-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: 2px 8px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+}
+
+.sla-on-track {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--color-success);
+}
+
+.sla-at-risk {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--color-warning);
+}
+
+.sla-overdue {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--color-error);
+}
+
+/* Role Active Badge */
+.role-active-badge {
+  font-size: 0.625rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  background: var(--color-success);
+  color: white;
+  border-radius: var(--radius-full);
+}

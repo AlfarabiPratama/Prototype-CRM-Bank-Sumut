@@ -1,0 +1,119 @@
+/* ==========================================
+   Layout - Page Structure
+   CRM Bank Sumut
+   ========================================== */
+
+.page {
+  padding: var(--spacing-xl);
+  max-width: 1400px;
+}
+
+.page-header {
+  margin-bottom: var(--spacing-xl);
+}
+
+.page-header h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.025em;
+}
+
+.page-subtitle {
+  color: var(--color-text-secondary);
+  margin-top: var(--spacing-xs);
+}
+
+.page-placeholder {
+  background: var(--color-bg-card);
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  color: var(--color-text-secondary);
+}
+
+.page-placeholder ul {
+  margin-top: var(--spacing-md);
+  margin-left: var(--spacing-lg);
+  list-style: disc;
+}
+
+.page-placeholder li {
+  margin-bottom: var(--spacing-sm);
+}
+
+.page-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  color: var(--color-text-muted);
+  font-size: 1.125rem;
+}
+
+/* Access Denied */
+.access-denied {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+  padding: var(--spacing-xl);
+}
+
+.access-denied svg {
+  color: var(--color-error);
+  margin-bottom: var(--spacing-md);
+}
+
+.access-denied h2 {
+  color: var(--color-text);
+  margin-bottom: var(--spacing-sm);
+}
+
+.access-denied p {
+  color: var(--color-text-secondary);
+}
+
+/* Not Found Page */
+.not-found-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--color-bg);
+  text-align: center;
+  padding: var(--spacing-xl);
+}
+
+.not-found-icon {
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-lg);
+}
+
+.not-found-page h1 {
+  font-size: 6rem;
+  font-weight: 800;
+  color: var(--color-text-muted);
+  line-height: 1;
+  margin-bottom: var(--spacing-md);
+}
+
+.not-found-page h2 {
+  font-size: 1.5rem;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-sm);
+}
+
+.not-found-page p {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.not-found-page .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}

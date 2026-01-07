@@ -1,0 +1,243 @@
+/* ==========================================
+   Feature - RFM Analysis Styles
+   CRM Bank Sumut
+   ========================================== */
+
+/* RFM Badge (in header/cards) */
+.rfm-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: color-mix(in srgb, var(--rfm-color) 15%, transparent);
+  color: var(--rfm-color);
+  border: 1px solid color-mix(in srgb, var(--rfm-color) 30%, transparent);
+  cursor: help;
+}
+
+.rfm-badge-sm {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  background: color-mix(in srgb, var(--rfm-color) 10%, transparent);
+}
+
+/* RFM Segment Colors */
+.rfm-champion { --rfm-color: #f59e0b; }
+.rfm-loyal { --rfm-color: #10b981; }
+.rfm-potential { --rfm-color: #06b6d4; }
+.rfm-at_risk { --rfm-color: #ef4444; }
+.rfm-hibernating { --rfm-color: #6b7280; }
+.rfm-lost { --rfm-color: #374151; }
+
+/* RFM Score Card */
+.rfm-score-card {
+  background: linear-gradient(135deg, var(--color-bg-card) 0%, #f8fafc 100%);
+}
+
+.rfm-score-card .info-card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.rfm-info-btn {
+  margin-left: auto;
+  padding: 4px;
+  border-radius: var(--radius-sm);
+  color: var(--color-text-muted);
+  transition: all var(--transition-fast);
+}
+
+.rfm-info-btn:hover {
+  background: var(--color-bg-hover);
+  color: var(--color-primary);
+}
+
+.rfm-total-score {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: var(--spacing-md);
+  background: var(--color-primary);
+  border-radius: var(--radius-md);
+  color: white;
+  margin-bottom: var(--spacing-md);
+}
+
+.rfm-total-label {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.rfm-total-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.rfm-scores {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.rfm-score-item {
+  display: grid;
+  grid-template-columns: 80px 1fr 30px;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.rfm-score-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.rfm-score-bar-container {
+  height: 8px;
+  background: var(--color-border);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.rfm-score-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light));
+  border-radius: var(--radius-full);
+  transition: width 0.5s ease;
+}
+
+.rfm-score-value {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-text);
+  text-align: right;
+}
+
+.rfm-segment-reason {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: var(--color-bg-hover);
+  border-radius: var(--radius-md);
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+}
+
+.rfm-segment-reason svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* RFM Distribution (Dashboard) */
+.rfm-distribution-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.rfm-dist-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  border-left: 4px solid var(--rfm-color);
+}
+
+.rfm-dist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.rfm-dist-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.rfm-dist-count {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--rfm-color);
+}
+
+.rfm-dist-bar-container {
+  height: 6px;
+  background: var(--color-border);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  margin-bottom: var(--spacing-xs);
+}
+
+.rfm-dist-bar {
+  height: 100%;
+  background: var(--rfm-color);
+  border-radius: var(--radius-full);
+  transition: width 0.5s ease;
+}
+
+.rfm-dist-percentage {
+  font-size: 0.625rem;
+  color: var(--color-text-muted);
+}
+
+.rfm-summary {
+  display: flex;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.rfm-summary-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--radius-md);
+}
+
+.rfm-summary-item.highlight-positive {
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.rfm-summary-item.highlight-warning {
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.rfm-summary-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.rfm-summary-label {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.highlight-positive .rfm-summary-value {
+  color: var(--color-success);
+}
+
+.highlight-warning .rfm-summary-value {
+  color: var(--color-error);
+}

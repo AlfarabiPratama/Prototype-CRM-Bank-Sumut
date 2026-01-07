@@ -1,0 +1,45 @@
+/* ==========================================
+   CRM Bank Sumut - Main Styles Entry
+   Modern Enterprise Banking UI
+   ==========================================
+   
+   This file imports all modular CSS files.
+   Structure:
+   ├── base/       - Variables, reset, typography
+   ├── layout/     - App structure, sidebar, page
+   ├── components/ - Reusable UI components
+   ├── pages/      - Page-specific styles
+   └── features/   - Feature-specific styles (RFM, NBA)
+   ========================================== */
+
+/* === Base === */
+@import './base/variables.css';
+@import './base/reset.css';
+
+/* === Layout === */
+@import './layout/app.css';
+@import './layout/sidebar.css';
+@import './layout/page.css';
+
+/* === Components === */
+@import './components/buttons.css';
+@import './components/cards.css';
+@import './components/forms.css';
+@import './components/modals.css';
+@import './components/badges.css';
+@import './components/tables.css';
+@import './components/loading.css';
+
+/* === Pages === */
+@import './pages/all-pages.css';
+@import './pages/dashboards.css';
+
+/* === Features === */
+@import './features/rfm.css';
+@import './features/nba.css';
+@import './features/recovery.css';
+@import './features/agent-workspace.css';
+
+/* === Remaining Legacy Styles (to be migrated) === */
+/* Import original file for styles not yet migrated */
+@import '../index.css';

@@ -1,0 +1,119 @@
+/* ==========================================
+   Feature - Service Recovery Styles
+   CRM Bank Sumut
+   ========================================== */
+
+/* Recovery Panel */
+.recovery-panel {
+  border: 1px solid var(--color-warning);
+  border-radius: var(--radius-lg);
+  background: rgba(245, 158, 11, 0.05);
+  padding: var(--spacing-lg);
+}
+
+.recovery-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.recovery-header h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.risk-badge {
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-left: auto;
+}
+
+/* Warnings */
+.auto-escalate-warning,
+.overdue-info {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.auto-escalate-warning {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--color-error);
+}
+
+.overdue-info {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--color-warning);
+}
+
+/* Recovery Actions */
+.recovery-actions h4 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-md);
+}
+
+.recovery-action-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.recovery-action-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.recovery-action-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.recovery-action-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.recovery-action-label {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--color-text);
+}
+
+.recovery-action-desc {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  margin-top: 2px;
+}
+
+.recovery-action-item .btn {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+/* Button Danger */
+.btn-danger {
+  background: var(--color-error);
+  color: white;
+  border: none;
+}
+
+.btn-danger:hover {
+  background: #dc2626;
+}

@@ -1,0 +1,120 @@
+/* ==========================================
+   Feature - NBA (Next Best Action) Styles
+   CRM Bank Sumut
+   ========================================== */
+
+.nba-card {
+  border-left: 4px solid var(--color-warning);
+}
+
+.nba-count-badge {
+  background: var(--color-warning);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  margin-left: auto;
+}
+
+.nba-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  background: var(--color-bg-hover);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-sm);
+}
+
+.nba-item:last-child {
+  margin-bottom: 0;
+}
+
+.nba-item-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.nba-action-icon {
+  font-size: 1.25rem;
+}
+
+.nba-priority-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: white;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.nba-item-content h4 {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.nba-reason {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+}
+
+.nba-item-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-xs);
+}
+
+.nba-btn {
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.nba-accept {
+  background: var(--color-success);
+  color: white;
+}
+
+.nba-accept:hover {
+  background: #059669;
+}
+
+.nba-snooze {
+  background: var(--color-bg-card);
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border);
+}
+
+.nba-snooze:hover {
+  background: var(--color-bg-hover);
+}
+
+/* Dashboard NBA Summary */
+.nba-summary {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.nba-summary-stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nba-summary-count {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-warning);
+}
